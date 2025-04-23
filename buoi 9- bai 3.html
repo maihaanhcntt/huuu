@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Cá Nhân</title>
+  <!-- AOS Animate On Scroll CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    body {
+      background-color: #f3e5f5;
+      color: #4a148c;
+      scroll-behavior: smooth;
+    }
+
+    .top-nav {
+      background-color: #ba68c8;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .top-nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .top-nav a:hover {
+      background-color: #ce93d8;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 30px;
+      background: linear-gradient(145deg, #ab47bc, #ce93d8);
+      color: white;
+    }
+
+    header h1 {
+      font-size: 32px;
+      text-shadow: 1px 1px 2px #6a1b9a;
+    }
+
+    section {
+      width: 85%;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(186, 104, 200, 0.2);
+    }
+
+    h2 {
+      color: #7b1fa2;
+      margin-bottom: 15px;
+    }
+
+    .profile-img {
+      display: block;
+      margin: 0 auto 15px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #ce93d8;
+      object-fit: cover;
+    }
+
+    .so-thich-item {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .so-thich-item img {
+      width: 130px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .so-thich-item p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin: 8px 0;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #6a1b9a;
+      font-weight: bold;
+    }
+
+    ul li a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #ba68c8;
+      color: white;
+      font-size: 14px;
+      margin-top: 30px;
+      border-top: 4px solid #ce93d8;
+    }
+
+    @media (max-width: 768px) {
+      .top-nav {
+        flex-wrap: wrap;
+      }
+
+      .profile-img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="top-nav">
+    <a href="#gioi-thieu">Giới thiệu</a>
+    <a href="#so-thich">Sở thích</a>
+    <a href="#hoc-tap">Học tập</a>
+    <a href="#dinh-huong">Định hướng</a>
+    <a href="#lien-ket">Bài tập</a>
+    <a href="#lien-he">Liên hệ</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>💜 Chào mừng đến với Portfolio của Hà Anh 💜</h1>
+  </header>
+
+  <!-- Giới thiệu -->
+  <section id="gioi-thieu" data-aos="fade-up">
+    <h2>Giới thiệu</h2>
+    <img class="profile-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsyqeUW0-Urx5Vltz-7lMQcJqgohH9v5uAmg&s" alt="Ảnh cá nhân">
+    <p><strong>Họ tên:</strong> Mai Hà Anh</p>
+    <p><strong>Ngành học:</strong> Công nghệ thông tin</p>
+  </section>
+
+  <!-- Sở thích -->
+  <section id="so-thich">
+    <h2>Sở thích & Khả năng</h2>
+    <div class="so-thich-item" data-aos="zoom-in">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOjzIjr7bESPQY6XgO8u4M8-Dgprr1PP8kLg&s" alt="Thích Nghe Nhạc">
+      <p>♬ Thích Nghe Nhạc</p>
+    </div>
+    <div class="so-thich-item" data-aos="zoom-in">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgQcR0fq5T5xEr_rwcgTycG4oU8E0YpQp2mA&s" alt="Chụp ảnh">
+      <p>📸 Chụp ảnh</p>
+    </div>
+  </section>
+
+  <!-- Học tập -->
+  <section id="hoc-tap" data-aos="fade-right">
+    <h2>Quá trình học tập</h2>
+    <p>🏫 Đang học tại: Trường Đại học Thủ Đô Hà Nội</p>
+  </section>
+
+  <!-- Định hướng -->
+  <section id="dinh-huong" data-aos="fade-left">
+    <h2>Định hướng công việc</h2>
+    <p>💼 Mục tiêu: Trở thành người có ích cho xã hội.</p>
+  </section>
+
+  <!-- Bài tập -->
+  <section id="lien-ket" data-aos="flip-up">
+    <h2>Liên kết bài tập</h2>
+    <ul>
+      <li>📂 <a href="https://maihaanhcntt.github.io/b-i-t-p-t-t-c-bu-i-1.html/">Bài tập 1</a></li>
+      <li>📂 <a href="https://maihaanhcntt.github.io/222222222222222222222222/">Bài tập 2</a></li>
+      <li>📂 <a href="https://maihaanhcntt.github.io/bu-i-5/">Bài tập 3</a></li>
+      <li>📂 <a href="https://maihaanhcntt.github.io/index.html/">Bài tập 4</a></li>
+      <li>📂 <a href="https://maihaanhcntt.github.io/b-i-t-p-tr-n-l-p-19.03/">Bài tập 5</a></li>
+      <li>📂 <a href="https://maihaanhcntt.github.io/666666/">Bài tập 6</a></li>
+      <li>📂 <a href="https://maihaanhcntt.github.io/hiiiii/">Bài tập 7</a></li>
+      <li>📂 <a href="https://maihaanhcntt.github.io/677/">Bài tập 8</a></li>
+    </ul>
+  </section>
+
+  <!-- Liên hệ -->
+  <section id="lien-he" data-aos="fade-up">
+    <h2>Liên hệ</h2>
+    <p>📧 Email: maianh22121975@gmail.com</p>
+    <p>📞 SĐT: 039548015</p>
+    <p>📍 Địa chỉ: Hà Nội, Việt Nam</p>
+  </section>
+
+  <footer>
+    <p>© 2025 - Hà Anh cute 💖</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
